@@ -6,4 +6,4 @@ FROM develop767/migu_video:latest
 EXPOSE 1234
 
 # 容器启动命令
-CMD ["migu_video"]
+CMD docker run -p 1234:1234 --name migu_video develop767/migu_video
